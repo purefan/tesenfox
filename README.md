@@ -13,3 +13,8 @@ Following you will find an index of the test cases published and a description o
 ## Event
 
 * [Test 1](event/374_event_1.html): Due to the many cache settings adding an event may not show in the core.index-member controller in the birthdays block. This test checks that adding, and deleting an event refreshes the cache, and shows the event and removes it accordingly.
+* [Test 2](feed/1): Checks that adding a series of hashtags separated by a line break does not corrupt the hashtag with the line break tag (for example: #hashtag<br). This case uses the utility case "Clear Cache" (mentioned below), update this suite when Clear Cache is updated.
+
+## Utility Cases
+These cases are used in more than one suite.
+* [Clear Cache](admincp/clear_cache.html): Clears the site cache by going to the AdminCP. Requires an admin user logged in and may fail if the admin user is required to log in to the AdminCP. the FlowControl plugin may be required to improve this case.
