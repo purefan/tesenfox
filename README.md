@@ -19,5 +19,5 @@ Following you will find an index of the test cases published and a description o
 
 ## Utility Cases
 These cases are used in more than one suite.
-* [Clear Cache](admincp/clear_cache.html): Clears the site cache by going to the AdminCP. Requires an admin user logged in and may fail if the admin user is required to log in to the AdminCP. the FlowControl plugin may be required to improve this case.
+* [Clear Cache](admincp/clear_cache.html): Clears the site cache, assumes we are already in the AdminCP. Requires [this test case](admincp/go_to_admincp.html).
 * [Go to AdminCP](admincp/go_to_admincp.html): Takes the user to the AdminCP, if it needs to log to the AdminCP it attempts log in with an arbitrary user.
