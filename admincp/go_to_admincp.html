@@ -24,21 +24,16 @@
 <tr>
 	<td>storeXpathCount</td>
 	<td>//*[@id=&quot;admincp_login_email&quot;]</td>
-	<td>bNeedsEmail</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>${bNeedsEmail}</td>
-	<td></td>
+	<td>iEmailInputCnt</td>
 </tr>
 <tr>
 	<td>gotoIf</td>
-	<td>storedVars['bNeedsEmail']&lt; 1</td>
+	<td>storedVars['iEmailInputCnt']&lt; 1</td>
 	<td>EndLogin</td>
 </tr>
 <tr>
 	<td>gotoIf</td>
-	<td>storedVars['bNeedsEmail'] &gt; 0</td>
+	<td>storedVars['iEmailInputCnt'] &gt; 0</td>
 	<td>DoLogin</td>
 </tr>
 <tr>
@@ -48,7 +43,7 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>${bNeedsEmail}</td>
+	<td>${iEmailInputCnt}</td>
 	<td></td>
 </tr>
 <!--The following commands will only be executed if the user needs to log in as administrator-->
