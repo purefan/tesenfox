@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.100/" />
+<title>go_to_admincp</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">go_to_admincp</td></tr>
+</thead><tbody>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=AdminCP</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AdminCP</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>//*[@id=&quot;admincp_login_email&quot;]</td>
+	<td>bNeedsEmail</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${bNeedsEmail}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['bNeedsEmail']&lt; 1</td>
+	<td>EndLogin</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['bNeedsEmail'] &gt; 0</td>
+	<td>DoLogin</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>DoLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${bNeedsEmail}</td>
+	<td></td>
+</tr>
+<!--The following commands will only be executed if the user needs to log in as administrator-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=val[email]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=val[email]</td>
+	<td>user1@phpfox.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=val[password]</td>
+	<td>phpfox</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=admincp_btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>EndLogin</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
