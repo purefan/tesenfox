@@ -8,10 +8,12 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
-<tr><td><a href="../test_cases/add_status_with_hashtags_and_line_breaks.html">add_status_with_hashtags_and_line_breaks</a></td></tr>
+<tr><td><a href="../../admincp/test_cases/go_to_admincp.html">go_to_admincp</a></td></tr>
+<tr><td><a href="../../admincp/test_cases/enable_hashtags.html">enable_hashtags</a></td></tr>
+<tr><td><a href="../test_cases/add_status_with_hashtags_in_russian.html">add_status_with_hashtags_in_russian</a></td></tr>
 <tr><td><a href="../../admincp/test_cases/go_to_admincp.html">go_to_admincp</a></td></tr>
 <tr><td><a href="../../admincp/test_cases/clear_cache.html">clear_cache</a></td></tr>
-<tr><td><a href="../test_cases/assert_hashtag1.html">assert_hashtag1</a></td></tr>
+<tr><td><a href="../test_cases/assert_hashtag_with_russian_chars.html">assert_hashtag_with_russian_chars</a></td></tr>
 </tbody></table>
 </body>
 </html>
